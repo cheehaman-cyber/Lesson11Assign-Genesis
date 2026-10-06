@@ -261,9 +261,11 @@ footer a {
     font-family: "Mulish", sans-serif; /* Uses the page's font */
     color: #111111; /* Makes the links dark */
     text-decoration: none; /* Removes the underline */
+    font-weight: 700; /* Bold */
 }
 
-header nav a {
+header nav a,
+footer nav a {
     font-family: "Mulish" , sans-serif;
     font-weight: 700;
     font-size: 18px;
