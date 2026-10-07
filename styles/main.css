@@ -280,4 +280,205 @@ footer nav {
   display: flex; /* Arranges the three icons in a row */
   align-items: center; /* Lines them up vertically */
   gap: 15px; /* Space between icons—check the value in Figma */
+}
+
+/* Project Details page */
+.project-intro {
+  display: flex; /*arranges the big box’s two children: Genesis Logo with Navigation Box */
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1109px;
+  margin: 100px auto 29px;
+}
+
+.project-description h1 {
+  max-width: 475px;
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  letter-spacing: 0px;
+  color: #111111;
+}
+
+.project-description p {
+  max-width: 635px;
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0px;
+  line-height: 26px;
+  color: #111111;
+  margin-top: 29px;
+}
+
+/*Project information card*/
+.project-info {
+  max-width: 335px;
+}
+
+.project-info div {
+  display: flex; /* Places the label and value side by side */
+  align-items: center; /* Aligns the label and value vertically */
+  padding: 19px 0; /* 18px above and below; no padding on the sides */
+}
+
+.project-info dt {
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0px;
+  line-height: normal;
+  color: #979797;
+  width: 137px; /* Label width plus the measured gap */
+  flex-shrink: 0; /* Keeps this column width consistent */
+}
+
+.project-info dd {
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0px;
+  line-height: normal;
+  color: #111111;
+  margin-left: 0; /* Removes the browser's default indentation */
+}
+
+.project-info hr.solid {
+  border-top: 1px solid #D8D8D8; /* Thinner, lighter grey line */
+  margin: 0; /* Removes the divider's inherited spacing */
+}
+
+.project-image {
+  display: block; /* Lets the image behave as its own box */
+  width: 100%; /* Uses the available width */
+  max-width: 1110px; /* Figma's image width */
+  height: auto; /* Keeps the image's original proportions */
+  margin-inline: auto; /* Centres the image */
+}
+
+.project-summary {
+  /* Keep your existing properties */
+  margin-bottom: 0; /*To make the gap exactly 45px, remove the summary paragraph’s default bottom margin:*/
+  margin-top: 45px; /* Space above the paragraph */
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0px;
+  line-height: normal;
+  color: #111111;
+  max-width: 1110px; /* Matches the image's width */
+  margin-inline: auto; /* Centres the paragraph box */
+}
+
+.project-gallery {
+  display: grid; /* Arranges the images in columns */
+  grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+  gap: 30px; /* Space between images */
+  max-width: 1110px; /* Matches the image's width */
+  margin-inline: auto; /* Centres the paragraph box */
+  margin: 45px auto 0; /* 45px above, centred, zero below */
+}
+
+.project-gallery img {
+  width: 100%; /* Makes each image fit its column */
+  height: auto; /* Keeps its original proportions */
+}
+
+.contact-intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Aligns their top edges */
+  max-width: 1110px;
+  margin-inline: auto;
+  margin-top: 110px; /* Space above the whole contact section */
+}
+
+.contact-description {
+  font-family: "Mulish", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  letter-spacing: 0px;
+  line-height: normal;
+  color: #111111;
+  max-width: 1110px; /* Matches the image's width */
+}
+
+.contact-description h1 {
+  margin-top: 0; /* Makes the heading start at the section's top */
+}
+
+.contact-description p {
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0px;
+  line-height: 26px;
+  color: #111111;
+}
+
+/*Sets the whole form’s width*/
+.contact-form {
+  width: 475px; /* Sets the whole form's width from Figma */
+  font-family: "Mulish", sans-serif;
+}
+
+/*Name,Email,Message*/
+/*Sets font, size and colour*/
+.contact-form label {
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0px;
+  line-height: normal;
+  color: rgba(17, 17, 17, 0.6);
+}
+
+/*input for Name and Email,and textarea for Message.*/
+.contact-form input,
+.contact-form textarea {
+  flex: 1; /* Typing area fills the space after the label */
+  min-width: 0;
+  border: 0; /* Removes borders on all four sides */
+  font: inherit; /* Uses the form's font settings */
+  height: 100%; /* Fits inside the field, leaving room for its underline */
+  background-color: transparent; /* Keeps the field’s underline visible */
+  padding: 0; /* Removes default inner spacing */
+  box-sizing: border-box; /* Includes the border in that height */
+}
+
+/*controls how its label and input sit together.*/
+.form-field {
+  display: flex; /* Arranges the label and typing area */
+  flex-direction: row; /* Places the label beside the typing area */
+  align-items: center;
+  border-bottom: 1px solid #D8D8D8; /* Line spans the whole field */
+  margin-bottom: 46px; /* 82px between underlines - 36px field height = 46px */
+  gap: 12px; /* Adds space between the label and typing area */
+  height: 36px;
+  box-sizing: border-box; /* Includes the underline in the 36px height */
+}
+
+.contact-form button {
+  width: 125px;
+  height: 50px;
+  background-color: #4A4FF2;
+  color: #FFFFFF;
+  font-family: Mulish, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  border: 0; /* Removes the default button border */
+  cursor: pointer; /* Shows a hand when hovering */
+}
+
+.contact-form .form-field:last-of-type { /*:last-of-type selects the last field <div> here*/
+  margin-bottom: 38px; /* Gap between Message underline and Submit */
+}
+
+.contact-map {
+  display: block; /* Gives the image its own box */
+  width: 100%; /* Uses the available width */
+  max-width: 1110px; /* Matches the contact section */
+  height: auto; /* Keeps the image’s proportions */
+  margin-inline: auto; /* Centres the image */
+  margin-top: 126px; /* Space between the contact section and the map */
 }/*# sourceMappingURL=main.css.map */
