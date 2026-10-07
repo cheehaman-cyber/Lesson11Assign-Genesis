@@ -1,0 +1,100 @@
+//contact page , Places description and form side by side
+.contact-intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Aligns their top edges */
+    max-width: 1110px;
+    margin-inline: auto;
+    margin-top: 110px; /* Space above the whole contact section */
+}
+
+.contact-description {
+    font-family: "Mulish" , sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: normal;
+    color: #111111;
+    max-width: 1110px; /* Matches the image's width */
+}
+
+.contact-description h1 {
+   margin-top: 0; /* Makes the heading start at the section's top */ 
+}
+
+.contact-description p {
+    font-family: "Mulish" , sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 26px;
+    color: #111111;
+}
+
+/*Sets the whole form’s width*/
+.contact-form {
+    width: 475px; /* Sets the whole form's width from Figma */
+    font-family: "Mulish", sans-serif;
+}
+
+/*Name,Email,Message*/
+/*Sets font, size and colour*/
+.contact-form label {
+    font-family: "Mulish" , sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: normal;
+    color: rgba(17, 17, 17, 0.6);
+    
+}
+
+/*input for Name and Email,and textarea for Message.*/
+.contact-form input,
+.contact-form textarea {
+    flex: 1; /* Typing area fills the space after the label */
+    min-width: 0;
+    border: 0; /* Removes borders on all four sides */
+    font: inherit; /* Uses the form's font settings */
+    height: 100%; /* Fits inside the field, leaving room for its underline */
+    background-color: transparent; /* Keeps the field’s underline visible */
+    padding: 0; /* Removes default inner spacing */
+    box-sizing: border-box; /* Includes the border in that height */
+}
+
+/*controls how its label and input sit together.*/
+.form-field {
+    display: flex; /* Arranges the label and typing area */
+    flex-direction: row; /* Places the label beside the typing area */
+    align-items: center;
+    border-bottom: 1px solid #D8D8D8; /* Line spans the whole field */
+    margin-bottom: 46px; /* 82px between underlines - 36px field height = 46px */
+    gap: 12px; /* Adds space between the label and typing area */
+    height: 36px;
+    box-sizing: border-box; /* Includes the underline in the 36px height */
+}
+
+.contact-form button {
+    width: 125px;
+    height: 50px;
+    background-color: #4A4FF2;
+    color: #FFFFFF;
+    font-family: Mulish , sans-serif;
+    font-size: 16px ;
+    font-weight: 700;
+    border: 0; /* Removes the default button border */
+    cursor: pointer; /* Shows a hand when hovering */
+}
+
+.contact-form .form-field:last-of-type { /*:last-of-type selects the last field <div> here*/
+    margin-bottom: 38px; /* Gap between Message underline and Submit */
+}
+
+.contact-map {
+    display: block; /* Gives the image its own box */
+    width: 100%; /* Uses the available width */
+    max-width: 1110px; /* Matches the contact section */
+    height: auto; /* Keeps the image’s proportions */
+    margin-inline: auto; /* Centres the image */
+    margin-top: 126px; /* Space between the contact section and the map */
+}

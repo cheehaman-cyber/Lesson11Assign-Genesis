@@ -1,0 +1,201 @@
+/* <main> — all main page content */
+/* <section class="intro"> — whole introduction box */
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  max-width: 1109px;
+  margin-inline: auto; /*shares the spare space equally on the left and right, centring the box.*/
+  margin-top: 96px;
+}
+
+/* <p class= "intro-label">Shooting Stars</p> */
+.intro-label {
+  /* Your font and colour styles */
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: -0.42px;
+  color: #4A4FF2;
+  margin-top: 0;
+}
+
+/* <h1> inside .intro — big introduction heading */
+.intro h1 {
+  /* Your font and colour styles */
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  letter-spacing: 0px;
+  color: #111111;
+  max-width: 635px;
+}
+
+/* Design is about progress */
+.intro-note {
+  /* Your font, colour and width settings */
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 18px;
+  letter-spacing: 0px;
+  color: rgba(17, 17, 17, 0.6); /*don’t need to memorise the conversion—color pickers can show the RGB values for a hex color.*/
+  width: 207px;
+  flex-shrink: 0;
+}
+
+/* Decorative line above the note */
+.intro-note::before { /*its decorative line*/
+  /* Font, colour and width for the note */
+  content: ""; /*creates an empty decorative piece.*/
+  display: block; /*puts it on its own line and do not need html.*/
+  width: 30px;
+  height: 2px;
+  background-color: #111111;
+  opacity: 0.5;
+  margin-bottom: 9px;
+}
+
+/* <span class="highlight"> — the words "product designer" */
+.highlight {
+  color: #4A4FF2;
+}
+
+/*<div class="gallery"> — the 12 portfolio pictures */
+.gallery { /*Arrange the things inside this box using rows and columns.*/
+  /* Keep your existing properties */
+  gap: 20px;
+  display: grid; /* Use a grid layout */
+  grid-template-columns: repeat(3, 1fr); /* Make 3 equal columns */
+  max-width: 1109px;
+  margin-inline: auto; /*shares the spare space equally on the left and right, centring the box.*/
+}
+
+.gallery-column {
+  display: flex; /*lets us arrange the pictures inside each column.*/
+  flex-direction: column; /*puts them one below another.*/
+  gap: 20px;
+}
+
+.gallery-column img {
+  width: 100%; /*makes each picture fill its column.*/
+  height: auto; /*keeps its original proportions.*/
+}
+
+/* <section class="services"> — services heading and list */
+/* services had 2 direct children : h2 and ul*/
+.services {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1109px;
+  margin-inline: auto; /*shares the spare space equally on the left and right, centring the box.*/
+  margin-top: 91px;
+  align-items: flex-start; /*lines up the top edges of the heading and both list boxes.*/
+}
+
+.services h2 {
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: 0px;
+  max-width: 635px;
+  margin: 0; /*removes the heading’s extra outside space.*/
+}
+
+.services .nav-column {
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: normal;
+  letter-spacing: 0px;
+}
+
+.services ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* <section class="awards"> — the whole awards section */
+/* Whole section: organisation groups stack vertically */
+.awards {
+  max-width: 1109px;
+  margin-top: 50px;
+  margin-inline: auto; /* Shares spare space equally on the left and right */
+}
+
+.award-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 48px;
+}
+
+.award-list {
+  width: 60%; /* Starting proportion; we will adjust using Figma */
+  display: flex;
+  flex-direction: column; /* Stacks them vertically */
+  gap: 80px;
+}
+
+.award {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.award-details {
+  width: 190px; /* Sets the space available for the project text */
+  flex-shrink: 0; /* Stops Flex from squeezing this box narrower */
+}
+
+.awards h2,
+.awards h3,
+.awards h4,
+.awards p {
+  margin: 0; /* Removes default spacing around the text */
+}
+
+.awards h2 {
+  font-family: Mulish, sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: normal;
+  letter-spacing: 0px;
+}
+
+.award h3 {
+  font-family: Mulish, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: normal;
+  letter-spacing: 0px;
+}
+
+.award-details h4 {
+  font-family: Mulish, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: 0px;
+  margin-bottom: 12px; /* Space between the project name and description */
+}
+
+.award-details p {
+  font-family: Mulish, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0px;
+  color: rgba(17, 17, 17, 0.6); /* #111111 at 60% opacity */
+}
+
+.award-year {
+  font-family: Mulish, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0px;
+}
