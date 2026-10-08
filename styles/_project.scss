@@ -1,3 +1,5 @@
+@use "variables";
+
 /* Project Details page */
 
 .project-intro {
@@ -11,21 +13,21 @@
 
 .project-description h1 {
     max-width: 475px;
-    font-family: "Mulish" , sans-serif;
+    font-family: variables.$font-family;
     font-weight: 700;
     font-size: 40px;
     letter-spacing: 0px;
-    color: #111111;
+    color: variables.$text-color;
 }
 
 .project-description p {
     max-width: 635px;
-    font-family: "Mulish" , sans-serif;
+    font-family: variables.$font-family;
     font-weight: 400;
     font-size: 16px;
     letter-spacing: 0px;
     line-height: 26px;
-    color: #111111;
+    color: variables.$text-color;
     margin-top: 29px;
 }
 
@@ -42,7 +44,7 @@
 
 
 .project-info dt {
-    font-family: "Mulish" , sans-serif;
+    font-family: variables.$font-family;
     font-weight: 700;
     font-size: 18px;
     letter-spacing: 0px;
@@ -54,12 +56,12 @@
 }
 
 .project-info dd {
-    font-family: "Mulish" , sans-serif;
+    font-family: variables.$font-family;
     font-weight: 700;
     font-size: 18px;
     letter-spacing: 0px;
     line-height: normal;
-    color: #111111;
+    color: variables.$text-color;
     margin-left: 0; /* Removes the browser's default indentation */
 }
 
@@ -80,12 +82,12 @@
   /* Keep your existing properties */
     margin-bottom: 0; /*To make the gap exactly 45px, remove the summary paragraph’s default bottom margin:*/
     margin-top: 45px; /* Space above the paragraph */
-    font-family: "Mulish" , sans-serif;
+    font-family: variables.$font-family;
     font-weight: 400;
     font-size: 18px;
     letter-spacing: 0px;
     line-height: normal;
-    color: #111111;
+    color: variables.$text-color;
     max-width: 1110px; /* Matches the image's width */
     margin-inline: auto; /* Centres the paragraph box */
 }
@@ -96,11 +98,10 @@
     max-width: 1110px; /* Matches the image's width */
     margin-inline: auto; /* Centres the paragraph box */
     margin: 45px auto 0; /* 45px above, centred, zero below */
-}
 
-.project-gallery img {
-    width: 100%; /* Makes each image fit its column */
-    height: auto; /* Keeps its original proportions */
+    img {
+        width: 100%; /* Makes each image fit its column */
+        height: auto; /* Keeps its original proportions */
+    }
 }
-
 

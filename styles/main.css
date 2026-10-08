@@ -1,4 +1,7 @@
 @charset "UTF-8";
+/* Purple */
+/* Dark text at 60% opacity */
+/* Main dark text colour */
 .contact-intro {
   display: flex;
   justify-content: space-between;
@@ -18,10 +21,12 @@
   max-width: 1110px; /* Matches the image's width */
 }
 
+.contact-description {
+  /* Keep all your existing description settings here */
+}
 .contact-description h1 {
   margin-top: 0; /* Makes the heading start at the section's top */
 }
-
 .contact-description p {
   font-family: "Mulish", sans-serif;
   font-weight: 400;
@@ -78,7 +83,7 @@
   height: 50px;
   background-color: #4A4FF2;
   color: #FFFFFF;
-  font-family: Mulish, sans-serif;
+  font-family: "Mulish", sans-serif;
   font-size: 16px;
   font-weight: 700;
   border: 0; /* Removes the default button border */
@@ -195,7 +200,6 @@
   margin-inline: auto; /* Centres the paragraph box */
   margin: 45px auto 0; /* 45px above, centred, zero below */
 }
-
 .project-gallery img {
   width: 100%; /* Makes each image fit its column */
   height: auto; /* Keeps its original proportions */
@@ -280,7 +284,6 @@
   flex-direction: column; /*puts them one below another.*/
   gap: 20px;
 }
-
 .gallery-column img {
   width: 100%; /*makes each picture fill its column.*/
   height: auto; /*keeps its original proportions.*/
@@ -362,7 +365,7 @@
 }
 
 .awards h2 {
-  font-family: Mulish, sans-serif;
+  font-family: "Mulish", sans-serif;
   font-weight: 700;
   font-size: 22px;
   line-height: normal;
@@ -370,7 +373,7 @@
 }
 
 .award h3 {
-  font-family: Mulish, sans-serif;
+  font-family: "Mulish", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: normal;
@@ -378,7 +381,7 @@
 }
 
 .award-details h4 {
-  font-family: Mulish, sans-serif;
+  font-family: "Mulish", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: normal;
@@ -387,7 +390,7 @@
 }
 
 .award-details p {
-  font-family: Mulish, sans-serif;
+  font-family: "Mulish", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
@@ -396,7 +399,7 @@
 }
 
 .award-year {
-  font-family: Mulish, sans-serif;
+  font-family: "Mulish", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;

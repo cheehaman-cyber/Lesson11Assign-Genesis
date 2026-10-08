@@ -1,3 +1,5 @@
+@use "variables";
+
 //contact page , Places description and form side by side
 .contact-intro {
     display: flex;
@@ -9,43 +11,47 @@
 }
 
 .contact-description {
-    font-family: "Mulish" , sans-serif;
+    font-family: variables.$font-family;
     font-weight: 800;
     font-size: 18px;
     letter-spacing: 0px;
     line-height: normal;
-    color: #111111;
+    color: variables.$text-color;
     max-width: 1110px; /* Matches the image's width */
 }
 
-.contact-description h1 {
-   margin-top: 0; /* Makes the heading start at the section's top */ 
-}
+.contact-description {
+    /* Keep all your existing description settings here */
 
-.contact-description p {
-    font-family: "Mulish" , sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    letter-spacing: 0px;
-    line-height: 26px;
-    color: #111111;
-}
+    h1 {
+        margin-top: 0; /* Makes the heading start at the section's top */ 
+    }
+
+    p {
+        font-family: variables.$font-family;
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: 0px;
+        line-height: 26px;
+        color: variables.$text-color;
+    }
+}   
 
 /*Sets the whole form’s width*/
 .contact-form {
     width: 475px; /* Sets the whole form's width from Figma */
-    font-family: "Mulish", sans-serif;
+    font-family: variables.$font-family;
 }
 
 /*Name,Email,Message*/
 /*Sets font, size and colour*/
 .contact-form label {
-    font-family: "Mulish" , sans-serif;
+    font-family: variables.$font-family;
     font-weight: 700;
     font-size: 16px;
     letter-spacing: 0px;
     line-height: normal;
-    color: rgba(17, 17, 17, 0.6);
+    color: variables.$muted-text-color;
     
 }
 
@@ -77,9 +83,9 @@
 .contact-form button {
     width: 125px;
     height: 50px;
-    background-color: #4A4FF2;
+    background-color: variables.$accent-color;
     color: #FFFFFF;
-    font-family: Mulish , sans-serif;
+    font-family: variables.$font-family;
     font-size: 16px ;
     font-weight: 700;
     border: 0; /* Removes the default button border */
