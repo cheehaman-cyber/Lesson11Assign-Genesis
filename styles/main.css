@@ -26,8 +26,10 @@
 }
 .contact-description h1 {
   margin-top: 0; /* Makes the heading start at the section's top */
+  max-width: 475px; /* Limits the heading width so words wrap naturally */
 }
 .contact-description p {
+  max-width: 445px;
   font-family: "Mulish", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -96,6 +98,10 @@
   align-items: flex-start; /* Aligns the label and textarea at the top */
 }
 
+.contact-form button:hover {
+  background-color: #363BD1; /* Darker purple when the mouse is over Submit */
+}
+
 .contact-form textarea {
   height: 100px; /* Starting height for longer messages */
   line-height: 24px;
@@ -106,7 +112,7 @@
   display: block; /* Gives the image its own box */
   width: 100%; /* Uses the available width */
   max-width: 1110px; /* Matches the contact section */
-  height: auto; /* Keeps the image’s proportions */
+  height: 570px; /* Keeps the image’s proportions */
   margin-inline: auto; /* Centres the image */
   margin-top: 126px; /* Space between the contact section and the map */
 }
@@ -203,9 +209,9 @@
   margin-top: 45px; /* Space above the paragraph */
   font-family: "Mulish", sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: 0px;
-  line-height: normal;
+  line-height: 26px;
   color: #111111;
   max-width: 1110px; /* Matches the image's width */
   margin-inline: auto; /* Centres the paragraph box */
@@ -485,7 +491,6 @@ header nav a {
   color: #111111;
 }
 
-/* <main> — all main page content */
 /* <section class="intro"> — whole introduction box */
 /* Solid border */
 hr.solid {

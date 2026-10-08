@@ -24,10 +24,12 @@
     /* Keep all your existing description settings here */
 
     h1 {
-        margin-top: 0; /* Makes the heading start at the section's top */ 
+        margin-top: 0; /* Makes the heading start at the section's top */
+        max-width: 475px; /* Limits the heading width so words wrap naturally */
     }
 
     p {
+        max-width: 445px;
         font-family: variables.$font-family;
         font-weight: 400;
         font-size: 16px;
@@ -98,6 +100,10 @@
     align-items: flex-start; /* Aligns the label and textarea at the top */
 }
 
+.contact-form button:hover {
+    background-color: #363BD1; /* Darker purple when the mouse is over Submit */
+}
+
 .contact-form textarea {
     height: 100px; /* Starting height for longer messages */
     line-height: 24px;
@@ -108,7 +114,7 @@
     display: block; /* Gives the image its own box */
     width: 100%; /* Uses the available width */
     max-width: 1110px; /* Matches the contact section */
-    height: auto; /* Keeps the image’s proportions */
+    height: 570px; /* Keeps the image’s proportions */
     margin-inline: auto; /* Centres the image */
     margin-top: 126px; /* Space between the contact section and the map */
 }

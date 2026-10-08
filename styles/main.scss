@@ -35,10 +35,6 @@ header nav a {
     color:#111111;
 }
 
-/* <main> — all main page content */
-main {
-}
-
 /* <section class="intro"> — whole introduction box */
 
 /* Solid border */
@@ -170,5 +166,9 @@ footer nav {
     gap: 15px; /* Space between icons—check the value in Figma */
 }
 
-
+/* Change link colour when the mouse is over them */
+header a:hover,
+footer a:hover {
+    color: variables.$accent-color;
+}
 
