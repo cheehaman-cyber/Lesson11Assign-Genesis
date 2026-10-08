@@ -105,3 +105,10 @@
     }
 }
 
+/* Stack the introduction in narrow windows */
+@media (max-width: 700px) {
+    .project-intro {
+        flex-direction: column;
+        gap: 24px;
+    }
+}

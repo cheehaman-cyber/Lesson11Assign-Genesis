@@ -94,6 +94,14 @@
 
 .contact-form .form-field:last-of-type { /*:last-of-type selects the last field <div> here*/
     margin-bottom: 38px; /* Gap between Message underline and Submit */
+    height: auto; /* Allows the Message field to become taller */
+    align-items: flex-start; /* Aligns the label and textarea at the top */
+}
+
+.contact-form textarea {
+    height: 100px; /* Starting height for longer messages */
+    line-height: 24px;
+    resize: vertical; /* Allows the user to make it taller */
 }
 
 .contact-map {
@@ -103,4 +111,17 @@
     height: auto; /* Keeps the image’s proportions */
     margin-inline: auto; /* Centres the image */
     margin-top: 126px; /* Space between the contact section and the map */
+}
+
+/* Stack the description and form in narrow windows */
+@media (max-width: 700px) {
+    .contact-intro {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .contact-form {
+        width: 100%;
+        max-width: 475px;
+    }
 }
