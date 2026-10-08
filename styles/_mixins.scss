@@ -1,0 +1,6 @@
+/* Reusable layout for the header and footer */
+@mixin flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -1,6 +1,7 @@
 @use "contact"; /*“Include the styles from _contact.scss when you build main.css.”*/
 @use "project";
 @use "home";
+@use "mixins";
 
 /* <body> — the whole visible page */
 body {
@@ -11,9 +12,7 @@ body {
 
 /* Header: arrange the logo and navigation */
 header {
-    display: flex; /*arranges the big box’s two children: Genesis Logo with Navigation Box */
-    justify-content: space-between;
-    align-items: center;
+    @include mixins.flex-between;
 
     max-width: 1109px;
     margin: 61px auto 0; /*Leave 61px above, share spare space equally left and right, and leave 0 below.*/
@@ -135,9 +134,7 @@ hr.solid{
 
 /* <footer> — bottom logo, navigation and social icons */
 footer {
-    display: flex; /*arranges the big box’s two children: Genesis Logo with Navigation Box */
-    justify-content: space-between; /* Distributes spare space between the three boxes */
-    align-items: center;
+    @include mixins.flex-between;
     max-width: 1109px;
     margin: 114px auto 47px;
 }  

@@ -451,6 +451,7 @@
     width: 100%;
   }
 }
+/* Reusable layout for the header and footer */
 /* <body> — the whole visible page */
 body {
   background-color: white;
@@ -460,7 +461,7 @@ body {
 
 /* Header: arrange the logo and navigation */
 header {
-  display: flex; /*arranges the big box’s two children: Genesis Logo with Navigation Box */
+  display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 1109px;
@@ -578,8 +579,8 @@ hr.solid {
 
 /* <footer> — bottom logo, navigation and social icons */
 footer {
-  display: flex; /*arranges the big box’s two children: Genesis Logo with Navigation Box */
-  justify-content: space-between; /* Distributes spare space between the three boxes */
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   max-width: 1109px;
   margin: 114px auto 47px;
